@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text;
 
 namespace CodebaseCsharp
@@ -11,6 +12,7 @@ namespace CodebaseCsharp
 
             me.PrintWithSpacing(new int[] { 109, 2, 3456, 49949, 51, 612379 });
             me.PrintFormats();
+            me.PrintDateFormats();
         }
 
         public Format()
@@ -37,7 +39,7 @@ namespace CodebaseCsharp
 
             string label = "Devise :";
             Console.WriteLine($"  'c ' {label,-15} {valInt,-20:c} int");
-            Console.WriteLine($"  'c ' {label,-15} {valDouble,-20:c} double"); // Ne marche pas
+            Console.WriteLine($"  'c ' {label,-15} {valDouble,-20:c} double"); 
             Console.WriteLine($"  'cN' {label,-15} {valInt,-20:c3} int avec c3");
             label = "Decimal :";
             Console.WriteLine($"  'd ' {label,-15} {valInt,-20:d} nombres entiers uniquement");
@@ -76,10 +78,34 @@ namespace CodebaseCsharp
             Console.WriteLine($"  {"'#0.00% 'mieux''",-18} : {-valDouble,-20:#0.00% 'mieux'}");
             Console.WriteLine($"  {"'\\##0.0e+0'",-18} : {-valDouble,-20:\\##0.0e+0'}");
             Console.WriteLine($"  {"'+pos;-neg;nul'",-18} : 1 = {1:+pos;-neg;nul} ; 0 = {0:+pos;-neg;nul} ; -1 = {-1:+pos;-neg;nul}");
-            label = "Date :";
-            Console.WriteLine($"  {label}");
-            Console.WriteLine("It is now {0:d} at {0:t}.", DateTime.Now);
             
+            Console.WriteLine();
+        }
+
+        public void PrintDateFormats()
+        {
+            Console.WriteLine("Print date formats.");
+            DateTime t = DateTime.Now;
+
+            Console.WriteLine($"  'd' {"Date courte",-25} {t:d}");
+            Console.WriteLine($"  'D' {"Date longue",-25} {t:D}");
+            Console.WriteLine($"  'f' {"Date/heure complet court",-25} {t:f}");
+            Console.WriteLine($"  'F' {"Date/heure complet long",-25} {t:F}");
+            Console.WriteLine($"  'g' {"Date général court",-25} {t:g}");
+            Console.WriteLine($"  'G' {"Date général long",-25} {t:G}");
+            Console.WriteLine($"  'm' {"Mois/jour",-25} {t:m}");
+            Console.WriteLine($"  'M' {"Mois/jour",-25} {t:M}");
+            Console.WriteLine($"  'o' {"Date/heure A/R",-25} {t:o}"); // ISO 8601
+            Console.WriteLine($"  'O' {"Date/heure A/R",-25} {t:O}");
+            Console.WriteLine($"  'r' {"RFC1123",-25} {t:r}");
+            Console.WriteLine($"  'R' {"RFC1123",-25} {t:R}");
+            Console.WriteLine($"  's' {"Triable",-25} {t:s}");
+            Console.WriteLine($"  't' {"Heure courte",-25} {t:t}");
+            Console.WriteLine($"  'T' {"Heure longue",-25} {t:T}");
+            Console.WriteLine($"  'u' {"Universel triable",-25} {t:u}");
+            Console.WriteLine($"  'U' {"Universel complet",-25} {t:U}");
+            Console.WriteLine($"  'y' {"Année/mois",-25} {t:y}");
+            Console.WriteLine($"  'Y' {"Année/mois",-25} {t:Y}");
 
             Console.WriteLine();
         }
