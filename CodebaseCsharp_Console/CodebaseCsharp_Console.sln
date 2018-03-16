@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{83756E40-527E-4615-9A33-B742E74CA058}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{B1175726-9F70-4BB5-9C2E-BB16C6FDB37B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel", "Excel\Excel.csproj", "{EF45E34F-C632-4906-B052-D3ADEE6CFA99}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83756E40-527E-4615-9A33-B742E74CA058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83756E40-527E-4615-9A33-B742E74CA058}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83756E40-527E-4615-9A33-B742E74CA058}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83756E40-527E-4615-9A33-B742E74CA058}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1175726-9F70-4BB5-9C2E-BB16C6FDB37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1175726-9F70-4BB5-9C2E-BB16C6FDB37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1175726-9F70-4BB5-9C2E-BB16C6FDB37B}.Release|Any CPU.ActiveCfg = Release|Any CPU

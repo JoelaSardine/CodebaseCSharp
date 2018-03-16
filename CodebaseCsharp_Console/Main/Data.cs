@@ -4,28 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodebaseCsharp.Linq
+namespace CodebaseCsharp
 {
-    class Program
+    static class Data
     {
-        /* Standard query operators : 
-        * - where
-        * - orderby
-        * - select
-        * - from
-        * - group
-        * - let 
-        */
-
-        static void Main(string[] args)
-        {
-            Execute();
-            
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
-        }
-
-        static List<Student> students = new List<Student>
+        public static List<Student> students = new List<Student>
         {
            new Student {First="Svetlana",   Last="Omelchenko",  ID=111, Scores= new List<int> {97, 92, 81, 60}},
            new Student {First="Claire",     Last="O'Donnell",   ID=112, Scores= new List<int> {75, 84, 91, 39}},
@@ -40,22 +23,18 @@ namespace CodebaseCsharp.Linq
            new Student {First="Eugene",     Last="Zabokritski", ID=121, Scores= new List<int> {96, 85, 91, 60}},
            new Student {First="Michael",    Last="Tucker",      ID=122, Scores= new List<int> {94, 92, 91, 91} }
         };
+    }
 
-        static void Execute()
+    public class Student
+    {
+        public string First { get; set; }
+        public string Last { get; set; }
+        public int ID { get; set; }
+        public List<int> Scores;
+
+        public override string ToString()
         {
-            Queries queries = new Queries(students);
-
-            queries.PrintList();
-            queries.PrintNames();
-            queries.PrintNamesAplhabetically();
-            queries.PrintStudentsByAverage(85, true);
-            queries.PrintStudentsByAverage(84, false);
-            queries.PrintAverageTotal();
-        }
-
-        static void LogVar<T>(string name, T variable)
-        {
-            Console.WriteLine("La variable '{0}' est de type '{1}'.", name, typeof(T));
+            return $"{First,8} {Last,-11} ; ID = {ID} ; Notes = {{{Scores[0]}, {Scores[1]}, {Scores[2]}, {Scores[3]}}}";
         }
     }
 }
