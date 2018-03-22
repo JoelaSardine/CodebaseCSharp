@@ -14,9 +14,9 @@
 - Lire le guide MSDN (https://msdn.microsoft.com/library?url=/library/fr-fr/cpgenref/html/cpconequals.asp)
 - Comprendre ce que sont les 'Attributes' (https://docs.microsoft.com/fr-fr/dotnet/standard/design-guidelines/attributes)
 - Qu'est-ce qu'une "DependencyProperty" ?
-- Projet LINQ
 - Projet Excel
 - Projet MongoDB
 - Projet WPF
 - Projet Unity Main
 - Projet Unity Platforms
+- Recherches sur la sérialisation XML, JSON, binaire (https://answers.unity.com/questions/295353/json-vs-xml-for-unity-c.html)
