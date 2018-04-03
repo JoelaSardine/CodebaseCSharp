@@ -1,0 +1,16 @@
+#####
+#####  Info sur les Templates WebGL
+#####
+	
+BetterMinimal
+	https://seansleblanc.itch.io/better-minimal-webgl-template
+	Minimal WebGL build template. Ideal for embedding on sites like itch.io which provide an external full-screen button.
+	Features:
+		Scales canvas to fit the window horizontally + vertically while maintaining aspect ratio (can be disabled)
+		Centers canvas in window
+		Customizable background
+	To use:
+		Download and unzip
+		Copy the "WebGLTemplates" folder into your project's "Assets" folder
+		File -> Build Settings... -> WebGL -> Player Settings... -> Select the "BetterMinimal" template
+		(Optional) Customize colour in the "Background" field; enter "false" in the "Scale to fit" field to disable scaling
