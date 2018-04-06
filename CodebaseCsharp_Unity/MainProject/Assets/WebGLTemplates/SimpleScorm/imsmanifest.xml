@@ -1,0 +1,14 @@
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="manifest-A9C5357183DE99672CA2E1E4A47DCB15" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="organization-A557013A85E30A84979A32EE604A8641">
+    <organization identifier="organization-A557013A85E30A84979A32EE604A8641" structure="hierarchical">
+      <title>Agro-Ecologie</title>
+      <item identifier="item-0AEF4ADAC91D5AF5FE935514E12955B1" isvisible="true" identifierref="resource-49071FE623DDC8CE6445926BC7FADD2F">
+        <title>Agro-Ecologie</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource-49071FE623DDC8CE6445926BC7FADD2F" type="webcontent" href="index.html" adlcp:scormtype="sco">
+    </resource>
+  </resources>
+</manifest>
