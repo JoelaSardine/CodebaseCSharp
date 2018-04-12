@@ -1,13 +1,15 @@
 # CodebaseCSharp
 
-## TODO : 
+## TODO Tools : 
 - Apprendre à bien utiliser Git
 - Apprendre à écrire un README
 - Apprendre à utiliser les TestTools de VS (https://msdn.microsoft.com/fr-fr/library/microsoft.visualstudio.testtools.unittesting.aspx)
 - Apprendre à créer des snippets VS
+- Faire des recherches sur le Windows Workflow Activity
+
+## TODO C#
 - Apprendre à accéder aux classes d'un projet depuis un autre
 - Apprendre à lancer un projet depuis un autre
-- Faire des recherches sur le Windows Workflow Activity
 - Apprendre à utiliser 'using', 'unsafe', 'unchecked', 'checked', 'lock'
 - Apprendre à utiliser les exceptions
 - Apprendre à utiliser les lambda expressions
@@ -17,6 +19,10 @@
 - Projet Excel
 - Projet MongoDB
 - Projet WPF
+- Recherches sur la sérialisation XML, JSON, binaire (https://answers.unity.com/questions/295353/json-vs-xml-for-unity-c.html)
+
+## TODO Unity
 - Projet Unity Main
 - Projet Unity Platforms
-- Recherches sur la sérialisation XML, JSON, binaire (https://answers.unity.com/questions/295353/json-vs-xml-for-unity-c.html)
+- https://unity3d.com/fr/learn/tutorials/s/2d-game-creation
+- Tilemaps
